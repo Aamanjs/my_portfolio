@@ -1,0 +1,73 @@
+.about-section {
+    padding: 80px 100px;
+    background-color: rgba(148, 148, 148, 0.9); /* Semi-transparent white to ensure readability over the moving background */
+    color: #333;
+    position: relative; /* Keep it layered correctly above the animated background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Optional: A slight shadow for depth */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.highlight {
+    color: #3f51b5; /* Your primary blue highlight color */
+}
+
+.about-content {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.about-text {
+    flex: 3; /* Takes up more space */
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.intro-text {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-info-box {
+    flex: 1; /* Takes up less space */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-info-box h3 {
+    margin-top: 0;
+    color: #ff9800; /* Use your secondary highlight color */
+}
+
+.about-info-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-info-box li {
+    margin-bottom: 10px;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 50px 20px;
+    }
+    .about-content {
+        flex-direction: column;
+    }
+}

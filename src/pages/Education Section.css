@@ -1,0 +1,61 @@
+/* ------------------------------------------------------------- */
+/* --- 6. EDUCATION SECTION STYLING (For the Timeline Layout) --- */
+/* ------------------------------------------------------------- */
+
+.education-section {
+    padding: 80px 100px;
+    /* Use a clear white background, slightly opaque, layered over the particle effect */
+    background-color: rgba(255, 255, 255, 0.95); 
+    color: #333;
+    position: relative; 
+}
+
+/* Timeline Item Container */
+.timeline-item {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding-left: 20px;
+    /* The vertical line that marks the timeline */
+    border-left: 3px solid #ff9800; /* Orange highlight line */
+    position: relative;
+}
+
+/* Icon (Graduate Cap) for the Timeline Marker */
+.timeline-item::before {
+    content: '🎓';
+    position: absolute;
+    left: -25px; /* Adjust to sit exactly on the orange line */
+    top: 0;
+    font-size: 1.5rem;
+    background-color: white; /* Ensures the cap sits cleanly over the background */
+    border-radius: 50%;
+    padding: 5px;
+    line-height: 1;
+}
+
+.timeline-year {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.timeline-title {
+    margin: 0 0 5px 0;
+    color: #3f51b5; /* Primary blue color */
+    font-size: 1.4rem;
+}
+
+.timeline-institution {
+    margin: 0 0 10px 0;
+    font-style: italic;
+    color: #777;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .education-section {
+        padding: 50px 20px;
+    }
+}

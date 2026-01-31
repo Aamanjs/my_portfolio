@@ -1,0 +1,89 @@
+
+
+
+
+
+
+
+/* ----------------------------------------------------------- */
+/* --- 8. CONTACT SECTION STYLING (The final, bold section) --- */
+/* ----------------------------------------------------------- */
+
+.contact-section {
+    padding: 80px 100px;
+    background-color: #3f51b5; /* Primary blue background */
+    color: white;
+    position: relative; 
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.contact-highlight {
+    color: #ffc107; /* Yellow highlight */
+}
+
+.contact-intro {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #ff9800; /* Orange Button */
+    color: #333;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.submit-button:hover {
+    background-color: #f57c00;
+    transform: translateY(-2px);
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #ffc107;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 50px 20px;
+    }
+}

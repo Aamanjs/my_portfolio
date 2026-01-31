@@ -1,0 +1,106 @@
+/* ----------------------------------------------------------------- */
+/* --- 9. PROJECTS SECTION STYLING (New section, placed last) --- */
+/* ----------------------------------------------------------------- */
+
+.projects-section {
+    padding: 80px 100px;
+    /* Light blue/gray background for visual separation */
+    background-color: rgba(230, 240, 255, 0.95); 
+    color: #333;
+    position: relative; 
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #ff9800; /* Orange accent */
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-title {
+    color: #3f51b5;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    color: #555;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Pushes the tech stack and links to the bottom */
+}
+
+.tech-stack {
+    margin-bottom: 20px;
+}
+
+.tech-tag {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #444;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px; /* Ensures space above buttons */
+}
+
+.project-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.live-button {
+    background-color: #3f51b5; /* Primary Blue */
+    color: white;
+}
+
+.live-button:hover {
+    background-color: #303f9f;
+}
+
+.github-button {
+    background-color: #333; /* Dark Gray */
+    color: white;
+}
+
+.github-button:hover {
+    background-color: #555;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 50px 20px;
+    }
+}

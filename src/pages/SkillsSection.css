@@ -1,0 +1,72 @@
+/* * Styles for the Skills Section Component
+ * Note: .section-title and .highlight classes are assumed to be global or provided separately.
+ */
+
+.skills-section {
+    padding: 80px 100px;
+    /* Use a light, slightly opaque background to let the particle animation show through */
+    background-color: rgba(240, 240, 240, 0.95); 
+    color: #333;
+    position: relative; 
+}
+
+.skill-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: #555;
+}
+
+.skills-grid {
+    display: grid;
+    /* Responsive grid: min width 200px per column */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.skill-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Primary color border top */
+    border-top: 5px solid #3f51b5; 
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+}
+
+.skill-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 10px;
+    /* Color handled by inline style in React component */
+}
+
+.skill-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 50px 20px;
+    }
+}

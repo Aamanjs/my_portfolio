@@ -1,0 +1,194 @@
+/* Import a custom font if necessary, e.g., Google Fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap'); */
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 👇 FIXED: Increased top padding to 120px so Navbar doesn't cover text */
+    padding: 120px 100px 50px 100px; 
+    height: 100vh; 
+    background-color: transparent;
+    background-image: none;
+    background-size: 50px 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.greeting {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.name-title {
+    font-size: 4rem;
+    margin: 0;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.sable-highlight {
+    color: #ff9800;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    color: #666868;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+/* typing text */
+.typing-text{
+    color: #000;
+}
+
+/* typing animation */
+@keyframes typing {
+  0% { width: 0; }
+  40% { width: 15ch; }
+  60% { width: 15ch; }
+  100% { width: 0; }
+}
+
+/* blinking cursor */
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.about-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    margin-bottom: 30px;
+}
+
+.about-button:hover {
+    background-color: #303f9f;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+/* --- Image Section Styling --- */
+
+.hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+.hero-image-container::before {
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color: #ffc107;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.profile-img {
+    width: 300px;
+    height: auto;
+    border-radius: 60%;
+    object-fit: cover;
+    z-index: 2;
+    position: relative;
+    padding-bottom: 20%;
+}
+
+/* New and Updated CSS for the Icons */
+.social-icon-wrapper {
+    width: 40px;
+    height: 40px;
+    background-color: #333; 
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+.social-icon-wrapper:hover {
+    background-color: #ff9800;
+    transform: translateY(-2px);
+}
+
+/* Matching Resume Button Style */
+.resume-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid #3f51b5;
+  color: #3f51b5;
+  padding: 10px 29px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #3f51b5;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* --- Media Query for Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        height: auto;
+        /* 👇 FIXED: Added extra top padding (100px) specifically for mobile view */
+        padding: 100px 20px 50px 20px; 
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .name-title {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .hero-image-container::before {
+        width: 250px;
+        height: 250px;
+    }
+
+    .profile-img {
+        width: 220px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
