@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/my_portfolio/static/css/main.34aa75d5.css",
+    "main.js": "/my_portfolio/static/js/main.1a3e13ca.js",
+    "static/js/453.ececc0a5.chunk.js": "/my_portfolio/static/js/453.ececc0a5.chunk.js",
+    "static/media/Aaman_Transparent (1).png": "/my_portfolio/static/media/Aaman_Transparent (1).f78a5b689cbedc4461af.png",
+    "index.html": "/my_portfolio/index.html",
+    "main.34aa75d5.css.map": "/my_portfolio/static/css/main.34aa75d5.css.map",
+    "main.1a3e13ca.js.map": "/my_portfolio/static/js/main.1a3e13ca.js.map",
+    "453.ececc0a5.chunk.js.map": "/my_portfolio/static/js/453.ececc0a5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34aa75d5.css",
+    "static/js/main.1a3e13ca.js"
+  ]
+}
